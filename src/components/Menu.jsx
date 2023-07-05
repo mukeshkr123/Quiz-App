@@ -3,12 +3,16 @@ import "./Menu.css";
 import { GamStateContext } from "../helpers/Context";
 
 const Menu = () => {
-  const { gameState, setgameState } = useContext(GamStateContext);
-  console.log(gameState);
+  const { setName, setgameState } = useContext(GamStateContext);
+
   return (
     <div className="Menu container">
       <label htmlFor="">Enter your Name</label>
-      <input type="text" placeholder="Ex, Mukesh Kumar" />
+      <input
+        onChange={(e) => setName(e.target.value)}
+        type="text"
+        placeholder="Ex, Mukesh Kumar"
+      />
       <button onClick={() => setgameState("playing")}>Start Quiz</button>
     </div>
   );
