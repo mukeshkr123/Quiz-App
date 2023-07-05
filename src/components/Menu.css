@@ -1,0 +1,28 @@
+label{
+    position: relative;
+    /* margin: 10px; */
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 150px;
+    margin-top: 10px;
+}
+
+input {
+    position: absolute;
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    padding: 5px;
+    padding-right: 10px;
+}
+
+button{
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+}
